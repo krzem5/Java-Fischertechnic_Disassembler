@@ -107,7 +107,6 @@ public class FischertechnicDisassembler{
 				for (String t:new String[]{"flow_out","data_out"}){
 					for (FischertechnicDisassembler.FischertechnicPin p:b.pins.get(t)){
 						if (p.p_id!=-1){
-							FischertechnicDisassembler.FischertechnicPin e=null;
 							for (FischertechnicDisassembler.FischertechnicWire w:this._wl){
 								if (w.type.equals(t.replace("_out",""))==true){
 									if (w.end==p.p_id){
